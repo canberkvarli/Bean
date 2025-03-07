@@ -1,5 +1,6 @@
 # voice_assistant/audio.py
 
+import os
 import speech_recognition as sr
 import pygame
 import time
@@ -8,6 +9,8 @@ import pydub
 from io import BytesIO
 from pydub import AudioSegment
 from functools import lru_cache
+import pyaudio
+import wave
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
